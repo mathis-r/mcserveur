@@ -36,7 +36,7 @@ launch()
 {
 	i=0
 	re='^[+-]?[0-9]+([.][0-9]+)?$' # Expression régulière permettant d'identifier si un variable est un nombre
-	listserv=($(ls -x /root/serveurs))
+	listserv=($(ls -x /root/serveurs)) || echo "Aucun serveur. Utilisez la commande create.sh pour en créer un"; exit 1
 	echo "Entrez le numéro du serveur à démarrer : "
 	while [ $i -lt ${#listserv[@]} ] # On fait la liste des dossiers sous /root/serveurs
 	do				 # Ils contiennent les serveurs à démarrer
