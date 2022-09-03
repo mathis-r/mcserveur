@@ -32,7 +32,7 @@ Tous les serveurs sont lancés avec root, ce qui permet un simple `sudo stop.sh`
 
 ## Utilisation
 ### Créer un serveur
-- `sudo mkdir -p /root/serveurs/*nomduserveur*`
+- `sudo mkdir /root/serveurs/*nomduserveur*`
 - ajouter un server.jar, téléchargé sur le site de minecraft ou ailleurs
 - lancez le une première fois : `sudo start.sh` il s'arrête peu après
 - éditez le fichier "eula.txt" et changez la valeur false -> true
