@@ -15,7 +15,7 @@ Si vous souhaitez utiliser un server.jar **non officiel** (spigot ou autre), le 
 ## Installation
 - `git clone https://github.com/mathis-r/mcserveur`
 - `cd mcserveur`
-- Modifiez le fichier start.bash : à la ligne 4, changez la valeur de la variable `ram` pour le maximum que vous voulez donner à votre serveur 
+- Modifiez le fichier start.bash : à la ligne 4, remplacez la valeur de la variable `ram` par la valeur maximum de mémoire que vous voulez donner à votre serveur 
 - `sudo chmod +x install.sh`
 - `sudo ./install.sh` 
 
