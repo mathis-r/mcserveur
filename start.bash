@@ -1,6 +1,8 @@
 #!/bin/bash
 # Ce script vient de github.com/mathis-r/mcserveur
 
+ram="2048M" # Remplacez cette valeur par la valeur maximum de mémoire que vous voulez donner à votre serveur.
+
 have_perm()
 {
 	#On vérifie que le script est éxecuté avec les droits administrateurs
@@ -57,7 +59,7 @@ launch()
 		grep "motd=" "$path"/server.properties | sed s/motd=//g > /tmp/motd.txt
 		cd "$path" || exit
 		#On démarre le serveur avec SCREEN :
-		screen -L -dmS Minecraft /usr/bin/java -Xmx3200M -jar server.jar --nogui
+		screen -L -dmS Minecraft /usr/bin/java -Xmx$ram -jar server.jar --nogui
 		screen -S Minecraft -p 0 -X colon "logfile flush 0^M"
 		screen -r
 	fi
