@@ -12,12 +12,10 @@ started()
 	touch /tmp/serv.txt
 	touch /tmp/motd.txt
 	#On vérifie qu'aucun autre serveur ne tourne
-	process=$(screen -ls | head -n 1)
-	stopped="No Sockets found in /run/screen/S-root."
-	if [ "$process" = "$stopped" ]; then
-		launch
-	else
+	if [ -z "$(screen -ls | grep -o "No Sockets")" ]; then
 		erreur
+	else
+		launch
 	fi
 	return 0	
 }
