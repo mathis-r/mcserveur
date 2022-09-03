@@ -16,7 +16,7 @@ Si vous souhaitez utiliser un server.jar **non officiel** (spigot ou autre), le 
 - `git clone https://github.com/mathis-r/mcserveur`
 - `cd mcserveur`
 - `sudo chmod +x install.sh`
-- `sudo install.sh` 
+- `sudo ./install.sh` 
 - 
 C'est fait !
 
