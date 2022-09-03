@@ -7,4 +7,4 @@ rm /usr/bin/stop.sh
 rm /usr/bin/uninstall.sh
 
 echo "Désinstaller !"
-echo "Les serveurs sont toujours là, mais vous pouvez les supprimer manuellement si vous avez envie"
+echo "Les serveurs sont toujours là, mais vous pouvez les supprimer manuellement si vous le voulez"
