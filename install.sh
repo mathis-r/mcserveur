@@ -2,7 +2,7 @@
 # Ce script vient de github.com/mathis-r/mcserveur
 
 cp list.sh /usr/bin/list.sh
-chmod x /usr/bin/list.sh
+chmod +x /usr/bin/list.sh
 cp start.bash /usr/bin/start.bash
 chmod +x /usr/bin/start.bash
 cp stop.sh /usr/bin/stop.sh
