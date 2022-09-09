@@ -13,6 +13,7 @@ Si vous souhaitez utiliser un server.jar **non officiel** (spigot ou autre), le 
 - coreutils (cat, tail, sleep, touch, mkdir, echo, grep, sed)
 
 ## Installation
+- Installez les dépendances
 - `git clone https://github.com/mathis-r/mcserveur`
 - `cd mcserveur`
 - Modifiez le fichier start.bash : à la ligne 4, remplacez la valeur de la variable `ram` par la valeur maximum de mémoire que vous voulez donner à votre serveur 
@@ -35,7 +36,7 @@ Tous les serveurs sont lancés avec root, ce qui permet un simple `sudo stop.sh`
 ### Créer un serveur
 - `sudo mkdir /root/serveurs/*nomduserveur*`
 - ajouter un server.jar, téléchargé sur le site de minecraft ou ailleurs
-- lancez le une première fois : `sudo start.sh` il s'arrête peu après
+- lancez le une première fois : `sudo start.bash` il s'arrête peu après
 - éditez le fichier "eula.txt" et changez la valeur false -> true
 - éditez le fichier server.properties
 - Vous pouvez à présent relancer le serveur : `sudo start.sh` Le monde va se générer (peut prendre du temps) puis vous pourrez le rejoindre
